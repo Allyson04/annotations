@@ -20,7 +20,21 @@
             <p>Below is shown your annotations, if you want to add annotations, just click the button "+ Take Note"</p>
         </section>  
         
-        
+        <section class="notes">
+            <h3>For now, you have 0 Annotations</h3>
+            <a href="#" onclick="Modal.create()">+Take Note</a>
+            <div class="note">
+                <h4 class="note-title" title="Title of Note">Send Email to New Employees</h4>
+                <p class="date" title="Date of Note">Date: 24/04/2021</p>
+                <a onclick="Notes.remove()" title="Button for removing notes"><img src="./assets/minus.svg" alt="Remove Note"></a>
+            </div>
+
+            <div class="note">
+                <h4 class="note-title" title="Title of Note">Cypress or Selenium for Automatic testing?</h4>
+                <p class="date" title="Date of Note">Date: 20/03/2021</p>
+                <a onclick="Notes.remove()" title="Button for removing notes"><img src="./assets/minus.svg" alt="Remove Note"></a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
