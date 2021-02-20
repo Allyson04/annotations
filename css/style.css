@@ -6,3 +6,12 @@
     font-size: 1rem;
     color: black;
 }
+
+/* common classes */
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
