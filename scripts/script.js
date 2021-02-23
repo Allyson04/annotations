@@ -1,5 +1,4 @@
 const GetHelp = document.querySelector(".help-main").classList
-const GetAddNote = document.getElementById("addNote").classList
 
 Intro = {  
     toggleHelp(){
@@ -9,6 +8,7 @@ Intro = {
 
 Notes = {
     remove(position){
-        document.querySelector("#addNote div:nth-child(" + position + ")").classList.add("hidden")
+        const GetNote = document.querySelector("#notes-section div:nth-child(" + position + ")").classList
+        GetNote.add("hidden")
     }
 }
