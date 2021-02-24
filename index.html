@@ -39,6 +39,32 @@
         </section>
     </main>
 
+    <div id="Modal-add-note" class="center hidden">
+        <h4>Let's create a note...</h4>
+
+        <form>
+            <!--Create title-->
+            <label for="input-title">Title</label>
+            <input type="text" name="input-title" id="input-title" placeholder="Ex: Visit Allyson's Github">
+
+            <!--Create date-->
+            <label for="input-date">What is your dead-line?</label>
+            <input type="date" name="input-date" id="input-date">
+
+            <!--set color-->
+            <label for="input-color">Which color do you want for background?</label>
+            <input type="radio" name="input-color" id="input-color" value="yellow">Yellow
+            <input type="radio" name="input-color" id="input-color" value="green">Green
+            <input type="radio" name="input-color" id="input-color" value="cyan">Cyan
+            <input type="radio" name="input-color" id="input-color" value="red">Red
+
+            <button type="submit" onclick="Notes.create()">Create Note</button>
+
+            <button type="button" onclick="Intro.toggleModal()">Close</button>
+
+        </form>
+    </div>
+
     <script src="./scripts/script.js"></script>
 </body>
 </html>
